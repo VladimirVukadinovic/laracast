@@ -1,0 +1,35 @@
+INFO
+
+-path to composer.phar (global)
+C:\ProgramData\ComposerSetup\bin\composer.phar
+
+-url GIT
+https://github.com/VladimirVukadinovic/laracast.git
+
+-resolve error migrate
+app\Providers\AppServiceProvider.php
+
+   public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+
+-console tools
+php artisan tinker
+
+-mysql base Storage Engine
+InnoDB
+
+STEPS
+-Instalirati composer - globalno
+Windows setup.exe
+
+-Instalirati Laravel instaler - globalno
+composer global require laravel/installer
+
+-Kreirati novi Laravel projekat
+laravel new ime_projekta
+
+-U Laravel projekat folder instalirati laravel-ide-helper
+composer require --dev barryvdh/laravel-ide-helper
+php artisan ide-helper:generate (nije potebno ako se prijekat povuce preko git-a)
