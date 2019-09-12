@@ -33,7 +33,7 @@
         <div class="field">
             <label class="label" for="description">New Task</label>
             <div class="control">
-                <input type="text" class="input" name="description" placeholder="New Task">
+                <input type="text" class="input" name="description" placeholder="New Task" required>
             </div>
         </div>
         <div class="field">
@@ -41,5 +41,6 @@
                 <button type="submite" class="button is-link">Add Task</button>
             </div>
         </div>
+        @include('errors')
     </form>
 @endsection
