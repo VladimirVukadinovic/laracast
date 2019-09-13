@@ -25,6 +25,12 @@ STEPS
 -Instalirati composer - globalno
     Windows setup.exe
 
+-Instalirati GIT
+    Windows setup.exe
+
+-Instalirati Node.js
+    Windows setup.exe
+
 -Instalirati Laravel instaler - globalno
     composer global require laravel/installer
 
@@ -34,3 +40,9 @@ STEPS
 -U Laravel projekat folder instalirati laravel-ide-helper
     composer require --dev barryvdh/laravel-ide-helper
     php artisan ide-helper:generate (nije potebno ako se prijekat povuce preko git-a)
+
+- Dodati autentifikaciju (promjenjeno u Laravelu 6.0)
+    composer require laravel/ui
+    php artisan ui vue --auth
+    npm install
+    npm run dev
